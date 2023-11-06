@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Bootstrap Avançado</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/responsivo.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Loja Confiantec</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cartao">Cartão</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/imagens/sale.jpg" alt="Promoções">
+                        <div class="carousel-caption">
+                            <h2>Promoções</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imagens/products.jpg" alt="Produtos">
+                        <div class="carousel-caption">
+                            <h2>Produtos</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/imagens/cards.jpg" alt="Faça seu Cartão">
+                        <div class="carousel-caption">
+                            <h2>Faça seu Cartão</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-exemplo"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-exemplo"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <section id="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card text-bg-dark">
+                        <img
+                            src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Produtos</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn btn-primary">Clique aqui</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card text-bg-dark">
+                        <img
+                            src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Promoções</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn btn-primary">Clique aqui</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card text-bg-dark">
+                        <img
+                            src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Cartão</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn btn-primary">Clique aqui</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card text-bg-dark">
+                        <img
+                            src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Projetos</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn btn-primary">Clique aqui</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div data-bs-spy="scroll" data-bs-target="#cabecalho"></div>
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active"
+                        type="button">Eletrônicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda
+                        Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda
+                        Feminina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        Conteúdo da aba Eletrônicos
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        Conteúdo da aba Moda Masculina
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        Conteúdo da aba Moda Feminina
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="promocoes">
+        <div class="container">
+        <h2>Promoções</h2>
+        </div>        
+    </section>
+    <section id="cartao">
+        <div class="container">
+        <h2>Cartão</h2>
+        </div>
+    </section>
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+        </div>
+    </section>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #1b88b3;
+    color: #fff;
+}
+#cabecalho {
+    z-index: 2; 
+}
+
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #1b88b3;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link .active {
+    color: #fff;
+}
+
+ol {
+    list-style-type: none;
+}
+.carousel-item img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-height: 620px
+}
+#carousel-exemplo h2 {
+    color: yellow;
+    text-shadow: 2px 1px black;
+}
+
+section {
+    background-color: #fff;
+    padding-top: 70px;
+}
+
+#cards h4, #cards p {
+    text-shadow: 1px 2px black;
+}
+
+header .nav-link {
+    text-align: center;
+    color: #fff;
+}
