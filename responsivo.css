@@ -5,24 +5,44 @@
         justify-content: space-between;
         max-width: 90%;        
     }
-    .carousel-item img {
-        margin-top: 16px;        
+    #carousel-exemplo img {
+        margin-top: 0;        
         width: 100%;
     }
 
+    #carousel-exemplo h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    section {
+        padding-top: 8px;
+    }
     section h2 {
         margin-left: 36px;
     }
 
-    .row article{
-        margin-bottom: 32px;
+    .card-img-overlay {
+        margin-left: 16px ;
+        margin-top: 16px;
     }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
     
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;        
+    }
+    
     section  {
         display: block;
         margin: auto;
+    }
+
+    .card-img-overlay {
+        margin-left: 16px ;
+        margin-top: 16px;
     }
 }
